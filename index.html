@@ -9,7 +9,60 @@
   </h1>
   
   <p>
-   
+   In this page you will find some of the projects I completed either individually or as a group.
+  <br> So far I have taken 3 classes: Programming in Java, Data Structures, and Teaching Methods.
+   <br> This page may update frequently.
   </p>
+  
+  <br>
+  
+  <h2>
+    Programming in Java
+  </h2>
+  
+  <a href="https://replit.com/@daianam08/workcsci70900-daianam08#CSCI70900/1/Nim.java">
+    <h4>
+    Nim  
+    </h4>
+  </a>
+  <p>
+    Below is one snipet of the code that I am proud of. It took me a while to figure out some of the conditions of the game. <br>
+    public static int playerRound(int pbag){
+      Scanner in = new Scanner(System.in);
+      if (pbag>3){
+        System.out.println("Pull 1, 2, or 3 stones: ");
+        int youPull = in.nextInt();
+          if (youPull<=0 || youPull>3){
+            System.out.println("Hey no cheating! Only pull 1, 2, or 3 stones: ");
+            youPull = in.nextInt();
+            } else {
+              System.out.println("You pulled "+youPull+".");
+              pbag=youPull;
+          } return pbag;
+        } else if(pbag>2){
+          System.out.println("Pull 1 or 2 stones: ");
+          int youPull = in.nextInt();
+            if (youPull<=0 || youPull>2){
+            System.out.println("Hey no cheating! Only pull 1 or 2 stones: ");
+            youPull = in.nextInt();
+            } else {
+              System.out.println("You pulled "+youPull+".");
+    youPull=pbag;
+  } return pbag;
+  } else if(pbag==1){
+    System.out.println("Pull the last stone! ");
+    int youPull = in.nextInt();
+    if (youPull<=0 || youPull>2){
+    System.out.println("Hey! Pull only 1:");
+    youPull = in.nextInt();
+    } else {
+    System.out.println("You pulled "+youPull+".");
+    youPull=pbag;
+  } 
+}  return pbag;//else if 1
+} //end player
+    
+  </p>
+  
 </body>
 </html>
