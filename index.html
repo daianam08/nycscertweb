@@ -29,39 +29,39 @@
     Below is one snipet of the code that I am proud of. It took me a while to figure out some of the conditions of the game. <br>
     <code>
     public static int playerRound(int pbag){
-      Scanner in = new Scanner(System.in);
-      if (pbag>3){
-        System.out.println("Pull 1, 2, or 3 stones: ");
-        int youPull = in.nextInt();
-          if (youPull<=0 || youPull>3){
-            System.out.println("Hey no cheating! Only pull 1, 2, or 3 stones: ");
-            youPull = in.nextInt();
-            } else {
-              System.out.println("You pulled "+youPull+".");
-              pbag=youPull;
-          } return pbag;
-        } else if(pbag>2){
-          System.out.println("Pull 1 or 2 stones: ");
-          int youPull = in.nextInt();
-            if (youPull<=0 || youPull>2){
-            System.out.println("Hey no cheating! Only pull 1 or 2 stones: ");
-            youPull = in.nextInt();
-            } else {
-              System.out.println("You pulled "+youPull+".");
-    youPull=pbag;
-  } return pbag;
-  } else if(pbag==1){
-    System.out.println("Pull the last stone! ");
-    int youPull = in.nextInt();
-    if (youPull<=0 || youPull>2){
-    System.out.println("Hey! Pull only 1:");
-    youPull = in.nextInt();
-    } else {
-    System.out.println("You pulled "+youPull+".");
-    youPull=pbag;
-  } 
-}  return pbag;//else if 1
-} //end player
+<br>      Scanner in = new Scanner(System.in);
+<br>      if (pbag>3){
+<br>        System.out.println("Pull 1, 2, or 3 stones: ");
+<br>        int youPull = in.nextInt();
+<br>          if (youPull<=0 || youPull>3){
+<br>            System.out.println("Hey no cheating! Only pull 1, 2, or 3 stones: ");
+<br>            youPull = in.nextInt();
+<br>            } else {
+<br>              System.out.println("You pulled "+youPull+".");
+<br>              pbag=youPull;
+<br>          } return pbag;
+<br>        } else if(pbag>2){
+<br>          System.out.println("Pull 1 or 2 stones: ");
+<br>          int youPull = in.nextInt();
+<br>            if (youPull<=0 || youPull>2){
+<br>            System.out.println("Hey no cheating! Only pull 1 or 2 stones: ");
+<br>            youPull = in.nextInt();
+<br>            } else {
+<br>              System.out.println("You pulled "+youPull+".");
+<br>    youPull=pbag;
+<br>  } return pbag;
+<br>  } else if(pbag==1){
+<br>    System.out.println("Pull the last stone! ");
+<br>    int youPull = in.nextInt();
+<br>    if (youPull<=0 || youPull>2){
+<br>    System.out.println("Hey! Pull only 1:");
+<br>    youPull = in.nextInt();
+<br>    } else {
+<br>    System.out.println("You pulled "+youPull+".");
+<br>    youPull=pbag;
+<br>  } 
+<br>}  return pbag;//else if 1
+<br>} //end player
       </code>
   </p>
   
