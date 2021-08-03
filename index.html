@@ -101,6 +101,58 @@
     
 </div> <!-- end col 2 -->
 
+    <div class= "col-4">
+  <h2>
+    Data Structures
+  </h2>
+     <a href="https://replit.com/@daianam08/workcsci70900-daianam08#Methods1/06_unplugged.md">
+    <h4>
+    Maze  
+    </h4>
+  </a>
+    <p>
+      I got to work with some bright minds on this one. I was proud of how well I was able to figure out the recursive call for this portion of the project.
+    </p>
+    <div style="background-color: #fae7e6; padding: 5px;">
+      <code>
+  public boolean solve(int col,int row){
+	  boolean solved;
+
+	  System.out.println(clearScreen+this);
+	  delay(100);
+	// BASE CASE 1 - solved
+	// if we found the exit we're done - return true
+	  if (board[col][row]=='$')
+			       return true;
+
+	// BASE CASE 2 - dead end
+	// if we hit a wall (' ') or our path ('z' or '.'),
+  //we can't go further this way - return false
+	  if (board[col][row]==' ' //wall
+	    || board[col][row]=='z' //curr path
+	    || board[col][row]=='.') //past path
+	    return false;
+
+    // put ourselves in the maze
+    board[col][row]='z';
+    // RECURSIVE CALLS
+    // try all the spaces we can go to
+    solved = solve(col+1,row);
+    if (!solved)
+        solved = solve(col-1,row);
+    if (!solved)
+        solved = solve(col,row+1);
+    if (!solved)
+        solved = solve(col,row-1);
+    // since we're not done yet remove ourselves
+       board[col][row]='.';
+       return solved;
+      }
+      </code>
+    </div><!--  end div -->
+    
+</div> <!-- end col 3 -->
+    
 </div> <!-- end row 1   -->
 
   
